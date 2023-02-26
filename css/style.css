@@ -1,0 +1,131 @@
+:root 
+{
+    /* Colors */
+    --clr-primary-blue-pale: hsl(225, 100%, 94%);
+    --clr-primary-blue-bright: hsl(245, 75%, 52%);
+    
+    --clr-neutral-blue-pale-very: hsl(225, 100%, 98%);
+    --clr-neutral-blue-desaturated: hsl(224, 23%, 55%);
+    --clr-neutral-blue-dark: hsl(223, 47%, 23%);
+
+    /* Fonts */
+    --ff-regular: 'Red Hat Display', sans-serif;
+
+    /* Font Weights */
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+}
+
+/* General Styling */
+body 
+{
+    background-color: var(--clr-primary-blue-pale);
+    font-family: var(--ff-regular);
+    padding: 1.5rem;
+}
+
+/* Order */
+.order 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow: hidden;
+
+    background-color: #fff;
+    color: var(--clr-neutral-blue-desaturated);
+    box-shadow: 0px 3px 21px 0px rgba(184,184,184,0.75);
+    -webkit-box-shadow: 0px 3px 21px 0px rgba(184,184,184,0.75);
+    -moz-box-shadow: 0px 3px 21px 0px rgba(184,184,184,0.75);
+
+    border-radius: 15px;
+    max-width: 375px;
+    margin: 30px auto;
+}
+
+
+.order__summary
+{
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.order__message
+{
+    margin-bottom: 20px;
+}
+
+.order__title
+{
+    font-size: 1.5rem;
+    font-weight: var(--fw-bolder);
+    color: var(--clr-neutral-blue-dark);
+    margin-bottom: 0.5rem;
+}
+
+.order__payment
+{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.2rem;
+}
+
+.order__payment a
+{
+    font-size: 0.8rem;
+    color: var(--clr-primary-blue-bright);
+}
+
+.order__payment a:hover 
+{
+    color: var(--clr-neutral-blue-desaturated);
+}
+
+.plan 
+{
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.plan img
+{
+    margin-right: 1rem;
+}
+
+/* Button */
+.button
+{
+
+    width: 100%;
+
+    padding: 0.7em;
+    margin-bottom: 1rem;
+
+    border: none;
+    border-radius: 10px;
+
+    color: #fff;
+    background-color: var(--clr-primary-blue-bright);
+    box-shadow: 0px 3px 21px 0px rgba(184,184,184,0.75);
+    -webkit-box-shadow: 0px 3px 21px 0px rgba(184,184,184,0.75);
+    -moz-box-shadow: 0px 3px 21px 0px rgba(184,184,184,0.90);
+  
+    cursor: pointer;
+}
+
+.button:hover 
+{
+    background-color: var(--clr-neutral-blue-desaturated);
+}
+
+/* Cancel Order */
+.order__cancel-order 
+{
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
