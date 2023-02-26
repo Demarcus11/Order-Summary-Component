@@ -31,6 +31,7 @@ body
     {
         background: url('/images/pattern-background-desktop.svg') no-repeat;
         background-color: var(--clr-primary-blue-pale);
+        background-position: center -150px;
     }
 }
 
