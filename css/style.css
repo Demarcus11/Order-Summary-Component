@@ -25,6 +25,14 @@ body
     padding: 1.5rem;
 }
 
+@media (min-width: 23.439em)
+{
+    body 
+    {
+        background: url('/images/pattern-background-desktop.svg') no-repeat;
+    }
+}
+
 /* Order */
 .order 
 {
@@ -90,7 +98,7 @@ body
 {
     display: flex;
     align-items: center;
-    
+
     margin-right: 1.5rem;
 }
 
